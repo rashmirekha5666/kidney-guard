@@ -1,0 +1,136 @@
+:root {
+    --primary: #0066cc;
+    --secondary: #00d4ff;
+    --text: #2d3436;
+    --muted: #636e72;
+    --bg: #ffffff;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    padding: 40px;
+    background: #f8fafc;
+}
+
+.report-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg);
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.report-title {
+    text-align: right;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.risk-high {
+    background: #fee2e2;
+    color: #ef4444;
+}
+
+.risk-moderate {
+    background: #fef3c7;
+    color: #f59e0b;
+}
+
+.risk-low {
+    background: #dcfce7;
+    color: #10b981;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h3 {
+    color: var(--primary);
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.data-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.data-item span {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.data-item strong {
+    font-size: 1.1rem;
+}
+
+.footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.8rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.btn-download {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+    cursor: pointer;
+    border: none;
+}
+
+@media print {
+    .btn-download {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .report-container {
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+    }
+}

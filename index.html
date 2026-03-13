@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KidneyGuard – Early Detection & Awareness</title>
+    <meta name="description"
+        content="KidneyGuard provides early symptom awareness and risk assessment for kidney disease. Protect your life with early detection.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Icons (Lucide via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <div class="logo">
+                <i data-lucide="activity"></i> KidneyGuard
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#symptoms">Symptoms</a></li>
+                <li><a href="#risks">Risk Checker</a></li>
+                <li><a href="#prevention">Prevention</a></li>
+            </ul>
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="theme-toggle" class="btn"
+                    style="padding: 8px; border-radius: 50%; width: 40px; height: 40px;">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="#risks" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Get Checked</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content" data-animate="fade-up">
+                        <h1>Detect Kidney Disease Early. <br>Protect Your Life.</h1>
+                        <p>Kidney disease is often a "silent killer" because it lacks symptoms in its early stages.
+                            Early detection can save lives and prevent permanent damage.</p>
+                        <div style="display: flex; gap: 20px;">
+                            <a href="#risks" class="btn btn-primary">Check Your Risk Now</a>
+                            <a href="#about" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero-image" data-animate="fade-in">
+                        <div class="kidney-viz">
+                            <div class="scanner-line"></div>
+                            <div class="data-point dp-1"></div>
+                            <div class="data-point dp-2"></div>
+                            <div class="data-point dp-3"></div>
+                            <img src="kidney-hologram.png" alt="Holographic Kidney Visualization">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2>What is Chronic Kidney Disease?</h2>
+                    <p style="max-width: 700px; margin: 0 auto;">Chronic kidney disease (CKD) means your kidneys are
+                        damaged and can't filter blood the way they should. This can lead to waste building up in your
+                        body and other health problems.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card" data-animate="fade-up">
+                        <div class="card-icon"><i data-lucide="droplet"></i></div>
+                        <h3>Causes</h3>
+                        <p>The leading causes are diabetes and high blood pressure, account for 3 out of 4 new cases.
+                        </p>
+                    </div>
+                    <div class="card" data-animate="fade-up" style="transition-delay: 0.1s;">
+                        <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                        <h3>Importance</h3>
+                        <p>Early detection allows for lifestyle changes and treatments that can slow or stop damage.</p>
+                    </div>
+                    <div class="card" data-animate="fade-up" style="transition-delay: 0.2s;">
+                        <div class="card-icon"><i data-lucide="heart-pulse"></i></div>
+                        <h3>Silent Nature</h3>
+                        <p>You may not feel sick until the disease is advanced. Regular screening is vital for at-risk
+                            individuals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Symptoms Section -->
+        <section id="symptoms" class="section" style="background: var(--bg-alt);">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2>Common Symptoms</h2>
+                    <p>Be aware of these warning signs that your kidneys might not be functioning correctly.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card" data-animate="fade-up">
+                        <h3>Swelling</h3>
+                        <p>Fluid retention leads to swelling in legs, ankles, or feet.</p>
+                    </div>
+                    <div class="card" data-animate="fade-up">
+                        <h3>Foamy Urine</h3>
+                        <p>Excess bubbles in urine, indicating protein leakage.</p>
+                    </div>
+                    <div class="card" data-animate="fade-up">
+                        <h3>Fatigue</h3>
+                        <p>Kidneys produce less EPO, leading to fewer red blood cells and tiredness.</p>
+                    </div>
+                    <div class="card" data-animate="fade-up">
+                        <h3>High BP</h3>
+                        <p>Kidneys help regulate blood pressure; damage can cause it to spike.</p>
+                    </div>
+                    <div class="card" data-animate="fade-up">
+                        <h3>Urine Changes</h3>
+                        <p>Drastically increased or decreased urination frequency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detection Methods -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header" data-animate="fade-up">
+                    <h2>Detection Methods</h2>
+                    <p>Doctors use these tests to check how well your kidneys are working.</p>
+                </div>
+                <div class="card-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+                    <div class="card">
+                        <h4>Blood Test</h4>
+                        <p>Checks eGFR (estimated Glomerular Filtration Rate) and Creatinine levels.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Urine Test</h4>
+                        <p>Checks for albumin (protein) in the urine, one of the earliest signs of damage.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Ultrasound</h4>
+                        <p>Visualizing the kidneys to look for abnormalities in size or shape.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Biopsy</h4>
+                        <p>Removing a tiny piece of kidney tissue for examination in advanced cases.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risk Checker -->
+        <section id="risks" class="section risk-checker">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI-Powered Risk Checker</h2>
+                    <p>Enter your details for a quick assessment of your kidney health risk factor.</p>
+                </div>
+                <div class="form-container" style="max-width: 1000px;">
+                    <form id="riskForm">
+                        <div class="form-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                            <!-- Demographics & Vitals -->
+                            <div class="form-section">
+                                <h4 style="margin-bottom: 20px; color: var(--primary);">1. Vitals & Profile</h4>
+                                <div class="form-group">
+                                    <label for="age">Age (years)</label>
+                                    <input type="number" id="age" required placeholder="e.g. 48">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bp">Blood Pressure (mm/Hg)</label>
+                                    <input type="number" id="bp" required placeholder="e.g. 80">
+                                </div>
+                                <div class="form-group">
+                                    <label>Hypertension?</label>
+                                    <select id="htn" required>
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Diabetes Mellitus?</label>
+                                    <select id="dm" required>
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Coronary Artery Disease?</label>
+                                    <select id="cad" required>
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Appetite Status</label>
+                                    <select id="appet" required>
+                                        <option value="0">Good</option>
+                                        <option value="1">Poor</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Urine & Blood Physicals -->
+                            <div class="form-section">
+                                <h4 style="margin-bottom: 20px; color: var(--primary);">2. Clinical Analysis</h4>
+                                <div class="form-group">
+                                    <label for="sg">Specific Gravity</label>
+                                    <select id="sg" required>
+                                        <option value="1.020">1.020</option>
+                                        <option value="1.005">1.005</option>
+                                        <option value="1.010">1.010</option>
+                                        <option value="1.015">1.015</option>
+                                        <option value="1.025">1.025</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="al">Albumin Level (0-5)</label>
+                                    <input type="number" id="al" min="0" max="5" required value="0">
+                                </div>
+                                <div class="form-group">
+                                    <label for="su">Sugar Level (0-5)</label>
+                                    <input type="number" id="su" min="0" max="5" required value="0">
+                                </div>
+                                <div class="form-group">
+                                    <label>Red Blood Cells (Urine)</label>
+                                    <select id="rbc" required>
+                                        <option value="0">Normal</option>
+                                        <option value="1">Abnormal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Pus Cell (Urine)</label>
+                                    <select id="pc" required>
+                                        <option value="0">Normal</option>
+                                        <option value="1">Abnormal</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Pus Cell Clumps?</label>
+                                    <select id="pcc" required>
+                                        <option value="0">Not Present</option>
+                                        <option value="1">Present</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>Bacteria in Urine?</label>
+                                    <select id="ba" required>
+                                        <option value="0">Not Present</option>
+                                        <option value="1">Present</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Lab Metrics -->
+                            <div class="form-section">
+                                <h4 style="margin-bottom: 20px; color: var(--primary);">3. Laboratory Metrics</h4>
+                                <div class="form-group">
+                                    <label for="sc">Serum Creatinine</label>
+                                    <input type="number" step="0.1" id="sc" required placeholder="e.g. 1.2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hemo">Hemoglobin (g/dL)</label>
+                                    <input type="number" step="0.1" id="hemo" required placeholder="e.g. 15.4">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pcv">Packed Cell Volume (%)</label>
+                                    <input type="number" id="pcv" required placeholder="e.g. 44">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bgr">Blood Glucose Random</label>
+                                    <input type="number" id="bgr" required placeholder="e.g. 121">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bu">Blood Urea</label>
+                                    <input type="number" id="bu" required placeholder="e.g. 36">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sod">Sodium (mEq/L)</label>
+                                    <input type="number" id="sod" required placeholder="e.g. 138">
+                                </div>
+                                <div class="form-group">
+                                    <label for="pot">Potassium (mEq/L)</label>
+                                    <input type="number" step="0.1" id="pot" required placeholder="e.g. 4.4">
+                                </div>
+                                <div class="form-group">
+                                    <label for="wc">White Blood Cell Count</label>
+                                    <input type="number" id="wc" required placeholder="e.g. 7800">
+                                </div>
+                                <div class="form-group">
+                                    <label for="rc">Red Blood Cell Count</label>
+                                    <input type="number" step="0.1" id="rc" required placeholder="e.g. 5.2">
+                                </div>
+                                <!-- Extra historical flags included for dataset consistency -->
+                                <div style="display: none;">
+                                    <select id="pe">
+                                        <option value="0">No</option>
+                                    </select>
+                                    <select id="ane">
+                                        <option value="0">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-footer" style="margin-top: 40px; text-align: center;">
+                            <button type="submit" class="btn btn-primary"
+                                style="padding: 15px 50px; font-size: 1.1rem;">
+                                Analyze My Risk with AI
+                            </button>
+                        </div>
+                    </form>
+                    <div id="result" class="result-box"></div>
+                </div>
+
+                <!-- BMI Calculator (Extra Feature) -->
+                <div class="form-container mt-4" style="background: var(--bg-alt);">
+                    <h3>BMI Calculator</h3>
+                    <p style="margin-bottom: 20px;">Being overweight increases the risk factors for kidney disease.</p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="form-group">
+                            <label>Weight (kg)</label>
+                            <input type="number" id="weight" placeholder="kg">
+                        </div>
+                        <div class="form-group">
+                            <label>Height (cm)</label>
+                            <input type="number" id="height" placeholder="cm">
+                        </div>
+                    </div>
+                    <button id="bmiBtn" class="btn btn-outline" style="width: 100%;">Calculate BMI</button>
+                    <div id="bmiResult" style="margin-top: 20px; font-weight: 600; text-align: center;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prevention Section -->
+        <section id="prevention" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Prevention Tips</h2>
+                    <p>8 Golden rules to protect your kidneys.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>Hydration</h4>
+                        <p>Drink enough water to help kidneys clear sodium and toxins.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Manage Sugar</h4>
+                        <p>Controlling blood sugar prevents diabetic kidney disease.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Control BP</h4>
+                        <p>Maintaining a healthy BP is crucial for kidney vessel health.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Smart Diet</h4>
+                        <p>Reduce salt intake and processed foods.</p>
+                    </div>
+                </div>
+
+                <!-- Emergency Warning -->
+                <div class="emergency-box" data-animate="fade-up">
+                    <div style="display: flex; gap: 20px; align-items: flex-start;">
+                        <i data-lucide="alert-triangle" style="color: var(--accent); width: 40px; height: 40px;"></i>
+                        <div>
+                            <h3>Emergency Warning</h3>
+                            <p>If you experience **severe swelling**, **chest pain**, **shortness of breath**, or **very
+                                low urine output** – seek medical attention immediately. These can be signs of acute
+                                kidney failure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- AI Assistant Chatbot -->
+    <div class="chat-assistant">
+        <button id="chat-toggle" class="chat-bubble">
+            <i data-lucide="message-circle"></i>
+        </button>
+        <div id="chat-window" class="chat-window" style="display: none;">
+            <div class="chat-header">
+                <div class="chat-status">
+                    <span class="status-dot"></span>
+                    <span>KidneyGuard AI Assistant</span>
+                </div>
+                <button id="close-chat" class="close-btn">&times;</button>
+            </div>
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant">
+                    Hello! I'm your KidneyGuard AI assistant. I've been contextualized with clinical data to help answer
+                    your questions about kidney health. How can I assist you today?
+                </div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Ask about kidney health..." autocomplete="off">
+                <button id="send-chat"><i data-lucide="send"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="logo"><i data-lucide="activity"></i> KidneyGuard</div>
+                    <p style="margin-top: 15px;">Dedicated to early detection and awareness of kidney health across the
+                        globe.</p>
+                </div>
+                <div>
+                    <h4>Contact Us</h4>
+                    <p>Email: support@kidneyguard.com</p>
+                    <p>Phone: +1 (555) HEALTHY</p>
+                </div>
+                <div>
+                    <h4>Follow Us</h4>
+                    <div style="display: flex; gap: 15px; margin-top: 10px;">
+                        <i data-lucide="facebook"></i>
+                        <i data-lucide="twitter"></i>
+                        <i data-lucide="instagram"></i>
+                        <i data-lucide="linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <p class="disclaimer">Disclaimer: This website does not replace professional medical advice, diagnosis,
+                    or treatment. Always seek the advice of your physician.</p>
+                <p style="margin-top: 20px; font-size: 0.8rem;">&copy; 2026 KidneyGuard. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
